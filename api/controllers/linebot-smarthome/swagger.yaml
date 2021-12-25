@@ -1,0 +1,14 @@
+paths:
+  /linebot-smarthome:
+    post:
+      x-handler: fulfillment
+      parameters:
+        - in: body
+          name: body
+          schema:
+            $ref: "#/definitions/CommonRequest"
+      responses:
+        200:
+          description: Success
+          schema:
+            $ref: "#/definitions/CommonResponse"
